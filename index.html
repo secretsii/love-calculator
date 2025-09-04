@@ -26,12 +26,15 @@
         }
         
         .container {
-            width: 100%;
-            max-width: 800px;
+            width: 800px;
+            height: 600px;
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 20px;
+            
+            transform: scale(calc(100vw / 800)); /* kecilin otomatis sesuai layar HP */
+            transform-origin: top center;        /* biar ngecil dari tengah atas */
         }
         
         .mario-header {
@@ -719,3 +722,4 @@
     </script>
 </body>
 </html>
+
